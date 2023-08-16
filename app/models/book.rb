@@ -1,5 +1,5 @@
 class Book < ApplicationRecord
-  before_save { |book| book.popularity = calculate_popularity }
+before_save { |book| book.popularity = calculate_popularity }
 
 private
   def calculate_popularity
